@@ -1,0 +1,273 @@
+.weather-app {
+
+  width: 100%;
+  max-width: 600px;
+
+  padding: 50px;
+
+  border-radius: 30px;
+
+  text-align: center;
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  background:
+    rgba(255,255,255,0.15);
+
+  border:
+    1px solid rgba(255,255,255,0.3);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.25);
+
+  color: white;
+
+  margin: auto;   /* VERY IMPORTANT */
+}
+/* Title */
+
+.weather-app h1 {
+
+  font-size: 28px;
+
+  margin-bottom: 25px;
+
+  font-weight: 600;
+}
+
+/* Search */
+
+.search-form {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 30px;
+}
+
+.search-form input {
+
+  flex: 1;
+
+  padding: 14px;
+
+  border-radius: 20px;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 16px;
+
+  background:
+    rgba(255,255,255,0.3);
+
+  color: white;
+}
+
+.search-form button {
+
+  padding: 14px 18px;
+
+  border-radius: 20px;
+
+  border: none;
+
+  background:
+    rgba(255,255,255,0.4);
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* Weather Info */
+
+.weather-info h2 {
+
+  font-size: 28px;
+
+  margin-bottom: 8px;
+}
+
+/* Temperature */
+
+.weather-info p:first-of-type {
+
+  font-size: 80px;
+
+  font-weight: 300;
+
+  margin: 10px 0;
+}
+
+/* Other text */
+
+.weather-info p {
+
+  font-size: 18px;
+
+  opacity: 0.9;
+}
+
+/* Error */
+
+.error {
+
+  color: #ffd1d1;
+}
+
+/* Forecast Container */
+
+.forecast-container {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 30px;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+/* Forecast Card */
+
+.forecast-card {
+
+  flex: 1;
+
+  min-width: 80px;
+
+  padding: 12px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  background:
+    rgba(255,255,255,0.2);
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+
+.forecast-card:hover {
+
+  background:
+    rgba(255,255,255,0.35);
+
+  transform: scale(1.05);
+}
+
+/* Forecast Text */
+
+.forecast-card p {
+
+  font-size: 14px;
+
+  margin: 5px 0;
+}
+
+
+
+
+
+/* Right Location Card */
+
+.location-card {
+
+  width: 260px;
+
+  padding: 25px;
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  backdrop-filter: blur(15px);
+
+  background:
+    rgba(255,255,255,0.15);
+
+  border:
+    1px solid rgba(255,255,255,0.3);
+
+  color: white;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   TWO COLUMN PAGE LAYOUT
+========================= */
+
+.main-layout {
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 30px;
+
+  align-items: start;
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 30px;
+}
+
+/* Right Location Card */
+
+.location-card {
+
+  width: 100%;
+
+  padding: 25px;
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  backdrop-filter: blur(15px);
+
+  background:
+    rgba(255,255,255,0.15);
+
+  border:
+    1px solid rgba(255,255,255,0.3);
+
+  color: white;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.2);
+
+  position: sticky;
+
+  top: 30px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+  .main-layout {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
